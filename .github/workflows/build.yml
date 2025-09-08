@@ -44,7 +44,7 @@ jobs:
                 os: [ ubuntu-20.04, ubuntu-22.04 ]
         steps:
             - uses: actions/checkout@v4
-            - uses: actions/setup-python@v5
+            - uses: actions/setup-python@v6
               with:
                 python-version: '3.11'
             - name: Test CMake min
@@ -110,7 +110,7 @@ jobs:
                 config: [ Debug, Release ]
         steps:
             - uses: actions/checkout@v4
-            - uses: actions/setup-python@v5
+            - uses: actions/setup-python@v6
               with:
                 python-version: '3.11'
             - uses: lukka/get-cmake@latest
@@ -147,7 +147,7 @@ jobs:
         runs-on: ubuntu-22.04
         steps:
             - uses: actions/checkout@v4
-            - uses: actions/setup-python@v5
+            - uses: actions/setup-python@v6
               with:
                 python-version: '3.11'
             - uses: lukka/get-cmake@latest
@@ -254,7 +254,7 @@ jobs:
                 static_build: [ APPLE_STATIC_LOADER=ON, APPLE_STATIC_LOADER=OFF ]
         steps:
             - uses: actions/checkout@v4
-            - uses: actions/setup-python@v5
+            - uses: actions/setup-python@v6
               with:
                 python-version: '3.11'
             - uses: lukka/get-cmake@latest
@@ -284,7 +284,7 @@ jobs:
             CMAKE_SYSTEM_NAME: [ iOS, tvOS ]
       steps:
           - uses: actions/checkout@v4
-          - uses: actions/setup-python@v5
+          - uses: actions/setup-python@v6
             with:
               python-version: '3.11'
           - uses: lukka/get-cmake@latest
@@ -318,7 +318,7 @@ jobs:
                 generator: [ Ninja, Xcode ]
         steps:
             - uses: actions/checkout@v4
-            - uses: actions/setup-python@v5
+            - uses: actions/setup-python@v6
               with:
                 python-version: '3.11'
             - uses: lukka/get-cmake@latest
@@ -358,7 +358,7 @@ jobs:
           shell: bash
       steps:
         - uses: actions/checkout@v4
-        - uses: actions/setup-python@v5
+        - uses: actions/setup-python@v6
           with:
             python-version: '3.11'
         - uses: lukka/get-cmake@latest
@@ -386,7 +386,7 @@ jobs:
           shell: bash
       steps:
         - uses: actions/checkout@v4
-        - uses: actions/setup-python@v5
+        - uses: actions/setup-python@v6
           with:
             python-version: '3.11'
         - uses: lukka/get-cmake@latest
@@ -409,7 +409,7 @@ jobs:
           shell: bash
       steps:
         - uses: actions/checkout@v4
-        - uses: actions/setup-python@v5
+        - uses: actions/setup-python@v6
           with:
             python-version: '3.11'
         - uses: lukka/get-cmake@latest
