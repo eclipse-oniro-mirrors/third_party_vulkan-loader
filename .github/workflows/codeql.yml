@@ -68,7 +68,7 @@ jobs:
     # If this step fails, then you should remove it and run the build manually
     - name: Autobuild
       if: matrix.language == 'python' 
-      uses: github/codeql-action/autobuild@9e8d0789d4a0fa9ceb6b1738f7e269594bdd67f0 # v3.28.9
+      uses: github/codeql-action/autobuild@9b3254085494b55a0f7c4c2b3d2d52cc712ce370 # v4.39.1
 
     - uses: actions/setup-python@v5
       if: matrix.language == 'cpp'
